@@ -1,0 +1,37 @@
+{
+  "streamingChatModel": {
+    "modeName": "gpt-3.5-turbo",
+    "temperature": 0.7,
+    "topP": 0.5,
+    "presencePenalty": 0.5,
+    "frequencyPenalty": 0.5,
+    "maxTokens": 4000,
+    "responseFormat": "text",
+    "stop": ["<END>", "User:", "Assistant:"]
+  },
+  "chatModel": {
+    "modelName": "gpt-3.5-turbo",
+    "temperature": 0.2,
+    "topP": 0.5,
+    "presencePenalty": 0.5,
+    "frequencyPenalty": 0.5,
+    "maxTokens": 4000,
+    "responseFormat": "text",
+    "maxRetries": 3,
+    "stop": ["<END>", "User:", "Assistant:"]
+  },
+  "embeddingModel": {
+    "modeName": "text-embedding-3-small"
+  },
+  "contentRetriever": {
+    "maxResult": 5,
+    "minScore": 0.75
+  },
+  "portNumber": 8080,
+  "documentsDirectory": "documents/",
+  "maxTokens": 4000,
+  "mongoConnectionString": "your-mongodb-connection-uri",
+  "mongoDbName": "your-database-name",
+  "mongoCollectionName": "your-collection-name",
+  "mongoIndexName": "your-vector-index-name"
+}
