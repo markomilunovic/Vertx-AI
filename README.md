@@ -5,7 +5,7 @@ This project implements a modular, streaming-enabled OpenAI chatbot service usin
 ## Features
 
 - Streaming & Non-Streaming OpenAI Chat via Langchain4j
-- Retrieval-Augmented Generation (RAG) using in-memory embedding store
+- Retrieval-Augmented Generation (RAG) with MongoDB Atlas-based vector store
 - Customizable Model Parameters (temperature, top_p, model, etc.)
 - Dynamic File Uploads for RAG indexing
 
